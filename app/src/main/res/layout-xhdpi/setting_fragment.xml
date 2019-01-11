@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="General"
+        android:textColor="@color/headings"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/general"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:text="username" />
+
+    <View
+        android:id="@+id/hline1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editUsername"
+        android:layout_marginTop="15dp"
+        android:background="#d3d3d3" />
+
+    <TextView
+        android:id="@+id/ChangeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hline1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Change username"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/editChangeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChangeUsername">
+
+        <EditText
+            android:id="@+id/editTextChangeUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:text="enter new username"
+            android:textColor="@android:color/tab_indicator_text"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnUsernmae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_check_24dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/hline2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editChangeUsername"
+        android:layout_marginTop="15dp"
+        android:background="#d3d3d3" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hline2"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingTop="0dp"
+        android:text="enter old password"
+        android:textSize="14sp"
+        android:textColor="@android:color/tab_indicator_text" />
+
+    <View
+        android:id="@+id/hline3"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="15dp"
+        android:background="#d3d3d3" />
+
+
+    <TextView
+        android:id="@+id/ChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hline3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Change Password"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/editChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ChangePassword">
+
+        <EditText
+            android:id="@+id/editTextChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:text="enter new password"
+            android:textColor="@android:color/tab_indicator_text"
+            android:textSize="14sp"/>
+
+
+        <ImageButton
+            android:id="@+id/btnPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_check_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/hline4"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editChangePassword"
+        android:layout_marginTop="15dp"
+        android:background="#d3d3d3" />
+</RelativeLayout>
